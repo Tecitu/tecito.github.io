@@ -1,0 +1,177 @@
+
+/* fondo*/
+
+:root {
+    --primary-color: #29a598;
+    --text-color: #394c4a;
+    --background-light: #ffffff;
+    --header-height: 100vh;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 110%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    color: #394c4a;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+/* Foto de fondo*/
+
+.header-background {
+    background: linear-gradient(rgba(255, 254, 253, 0.7), rgba(255, 254, 253, 0.9)), 
+                url("fondo.png") center center fixed;
+    background-size: cover;
+    text-align: center;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* barrita de arriba*/
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #F1BBE2;
+    padding: 15px 0;
+}
+/* alinear opciones barrita*/
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+/* fuente, color y tamaño barrita*/
+nav ul li a {
+    color: #F9D56E;
+    text-decoration: none;
+    font-family: 'Bryndan Write Book', cursive;
+    font-size: 1.2rem;
+}
+/*logo*/
+.header-content img {
+    max-width: 250px;
+    border-radius: 50%;
+}
+/* fuente y tamaño mini descripción*/
+.header-content h1, .header-content p {
+    margin: 0.5rem 0;
+    font-family: 'Bryndan Write Book', cursive;
+
+}
+
+
+/* estilo de las secciones*/
+#sobremi {
+    background-color: #ffffff; 
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 40px;
+    border-radius: 0.5%;
+    text-align: center;
+    font-family: 'Bryndan Write Book';
+    color: #F1BBE2;
+}
+/* fotito de sobre mi*/
+.SobreMi {
+    margin: 0;
+    padding: 0;
+}
+.fotoSobreMi {
+    display: grid;
+    height: 100%;
+}
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+#portfolio {
+    background-color: #5AB7CA; 
+    padding: 15px;
+    border-radius: 0.5%;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.projecto {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    display: inline-block;
+    line-height: 200px;
+}
+/* form contacto*/
+#contacto {
+    background-color: #E7C6FF; 
+    padding: 15px;
+    border-radius: 0.5%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.td-btn {
+    padding: 12px 36px;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+     background-color: #0fbfbf; 
+
+}
+/* pie de pagina*/
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+}
+
+/* extras */
+h2 {
+    color: #333;
+    font-family: 'Bryndan Write Book', cursive;
+    font-size: 2.3rem;
+    color: #ffffff;
+}
+/*efecto botones*/
+a {
+    color: #29a598;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #208479;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+  
+
+}
+/*fuente que descargue de fontspace.com, es la misma que usé para el logo, lo hice con canva je*/
+@font-face {
+    font-family: 'Bryndan Write Book' ;
+    src: url(BryndanWriteBook-nGPM.ttf);
+}
